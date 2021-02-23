@@ -9,6 +9,7 @@ def encrypt(message, key):
     encrypted = ''
     for chars in message:
         if chars in LETTERS:
+            
             num = LETTERS.find(chars)
             num += key
             if num>25:
